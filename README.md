@@ -2,6 +2,10 @@
 
 A web application designed to help children improve their reading skills through interactive assessments and engaging stories.
 
+## Live Demo
+
+Check out the live demo: [Learning App](https://learning-app-demo.vercel.app) (Replace with your actual deployment URL)
+
 ## Features
 
 - Interactive reading assessments
@@ -50,7 +54,13 @@ A web application designed to help children improve their reading skills through
 
 ## Deployment
 
-Instructions for deploying to production will be added soon.
+The application is deployed using Vercel. To deploy your own version:
+
+1. Fork this repository
+2. Sign up for [Vercel](https://vercel.com)
+3. Create a new project and import your forked repository
+4. Vercel will automatically detect the Next.js configuration
+5. Click "Deploy"
 
 ## License
 
