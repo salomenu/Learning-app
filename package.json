@@ -1,45 +1,27 @@
 {
   "name": "learning-app",
   "version": "1.0.0",
-  "description": "A learning app that integrates Large Language Models and Generative AI to teach children to read using the Jolly Phonics approach.",
-  "main": "src/app.ts",
+  "description": "A web application for helping children improve their reading skills",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
   "scripts": {
-    "start": "ts-node src/app.ts",
-    "build": "tsc",
-    "test": "jest"
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "typescript": "^4.5.4",
-    "ts-node": "^10.4.0",
-    "jest": "^27.0.6",
-    "body-parser": "^1.19.0",
-    "mongoose": "^7.6.3",
-    "dotenv": "^16.3.1",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "cors": "^2.8.5"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/jest": "^27.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "@types/node": "^20.8.2",
-    "@types/mongoose": "^5.11.97",
-    "@types/bcryptjs": "^2.4.4",
-    "@types/jsonwebtoken": "^9.0.3",
-    "@types/cors": "^2.8.14",
-    "eslint": "^7.32.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/learning-app.git"
   },
   "keywords": [
-    "learning",
     "education",
     "reading",
     "children",
-    "phonics",
-    "AI"
+    "learning",
+    "assessment"
   ],
-  "author": "Your Name",
+  "author": "",
   "license": "MIT"
 }
