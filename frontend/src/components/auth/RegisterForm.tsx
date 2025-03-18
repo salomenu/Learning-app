@@ -47,12 +47,11 @@ export const RegisterForm: React.FC = () => {
 
         setIsLoading(true);
         try {
-            await register({
-                name: formData.name,
-                email: formData.email,
-                password: formData.password,
-                age: parseInt(formData.age)
-            });
+            await register(
+                formData.name,
+                formData.email,
+                formData.password
+            );
             router.push('/dashboard');
         } catch (error) {
             console.error('Registration failed:', error);

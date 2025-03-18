@@ -1,6 +1,10 @@
 import axios, { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
 import { ApiError } from '../utils/types';
 
+interface ErrorResponse {
+    message: string;
+}
+
 class Api {
     private api: AxiosInstance;
 
@@ -33,7 +37,7 @@ class Api {
         // Response interceptor
         this.api.interceptors.response.use(
             (response: AxiosResponse) => response,
-            (error: AxiosError) => {
+            (error: AxiosError<ErrorResponse>) => {
                 const apiError: ApiError = {
                     message: error.response?.data?.message || 'An error occurred',
                     status: error.response?.status
